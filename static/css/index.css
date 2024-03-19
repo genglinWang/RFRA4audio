@@ -155,3 +155,7 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.custom-audio-player {
+    width: 50%; /* 设置为期望的长度 */
+}
