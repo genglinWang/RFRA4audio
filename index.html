@@ -285,22 +285,31 @@
         <h2 class="title is-3">Speech Recovery Result</h2>
         <div class="content has-text-justified">
           <p class="caption">
-            The speech samples in this section are collected in noisy scenario or recovered from the data collected in soundproof scenario.
+            
           </p>
           <div class="content">
             <!-- 第一行音频播放器 -->
             <div class="columns">
               <div class="column">
+                <p class="is-size-5 has-text-centered">Content</p>
+                <p class="content has-text-centered">
+                    Down
+                </p>
+              </div>
+              <div class="column">
+                <p class="is-size-5 has-text-centered">Original</p>
                 <audio controls class="audio-player" preload="metadata" style="width: 100%;">
                   <source src="LJSpeech samples/Soundproof/Ground truth/LJ047-0049.wav" type="audio/wav">
                 </audio>
               </div>
               <div class="column">
+                <p class="is-size-5 has-text-centered">Eavesdropped</p>
                 <audio controls class="audio-player" preload="metadata" style="width: 100%;">
                   <source src="LJSpeech samples/Soundproof/Microphone/LJ047-0049_mic.wav" type="audio/wav">
                 </audio>
               </div>
               <div class="column">
+                <p class="is-size-5 has-text-centered">Reconstructed</p>
                 <audio controls class="audio-player" preload="metadata" style="width: 100%;">
                   <source src="LJSpeech samples/Soundproof/WaveEar/LJ047-0049.wav" type="audio/wav">
                 </audio>
