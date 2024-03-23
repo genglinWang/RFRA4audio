@@ -282,7 +282,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Speech Recovery Result</h2>
+        <h2 class="title is-3">Speech Recovery Result: Speech Commands</h2>
         <div class="content has-text-justified">
           <p class="caption">
             
@@ -291,9 +291,9 @@
             <!-- 第一行音频播放器 -->
             <div class="columns">
               <div class="column">
-                <p class="is-size-5 has-text-centered">Content</p>
+                <p class="is-size-5 has-text-centered">Speech Command</p>
                 <p class="content has-text-centered">
-                    Speech command: down.wav
+                    down
                 </p>
               </div>
               <div class="column">
@@ -342,6 +342,70 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Speech Recovery Result: Long-context Audio</h2>
+        <div class="content has-text-justified">
+          <p class="caption">
+            
+          </p>
+          <div class="content">
+            <!-- 第一行音频播放器 -->
+            <div class="columns">
+              <div class="column">
+                <p class="is-size-5 has-text-centered">Speech Command</p>
+                <p class="content has-text-centered">
+                    down
+                </p>
+              </div>
+              <div class="column">
+                <p class="is-size-5 has-text-centered">Original</p>
+                <audio controls class="audio-player" preload="metadata" style="width: 100%;">
+                  <source src="LJSpeech samples/Soundproof/Ground truth/LJ047-0049.wav" type="audio/wav">
+                </audio>
+              </div>
+              <div class="column">
+                <p class="is-size-5 has-text-centered">Eavesdropped</p>
+                <audio controls class="audio-player" preload="metadata" style="width: 100%;">
+                  <source src="LJSpeech samples/Soundproof/Microphone/LJ047-0049_mic.wav" type="audio/wav">
+                </audio>
+              </div>
+              <div class="column">
+                <p class="is-size-5 has-text-centered">Reconstructed</p>
+                <audio controls class="audio-player" preload="metadata" style="width: 100%;">
+                  <source src="LJSpeech samples/Soundproof/WaveEar/LJ047-0049.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <!-- 第二行音频播放器 -->
+            <div class="columns">
+              <div class="column">
+                <audio controls class="audio-player" preload="metadata" style="width: 100%;">
+                  <source src="LJSpeech samples/Soundproof/Ground truth/LJ047-0128.wav" type="audio/wav">
+                </audio>
+              </div>
+              <div class="column">
+                <audio controls class="audio-player" preload="metadata" style="width: 100%;">
+                  <source src="LJSpeech samples/Soundproof/Microphone/LJ047-0128_mic.wav" type="audio/wav">
+                </audio>
+              </div>
+              <div class="column">
+                <audio controls class="audio-player" preload="metadata" style="width: 100%;">
+                  <source src="LJSpeech samples/Soundproof/WaveEar/LJ047-0128.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <!-- 可以继续添加更多行 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
