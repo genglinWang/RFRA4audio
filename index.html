@@ -246,12 +246,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Recent studies have demonstrated the feasibility of eavesdropping on audio via radio frequency signals or videos, which capture physical surface vibrations from surrounding objects. However, these methods are inadequate for intercepting internally transmitted audio through wired media. 
-            
-            In this work, we introduce radio-frequency retroreflector attack (RFRA) and bridge this gap by proposing an RFRA-based eavesdropping system, RF-Parrot, capable of wirelessly capturing audio signals transmitted through earphone wires. 
+          <p>Recent studies have demonstrated the feasibility of eavesdropping on audio via radio frequency signals or videos, which capture physical surface vibrations from surrounding objects. However, these methods are inadequate for intercepting internally transmitted audio through wired media. In this work, we introduce radio-frequency retroreflector attack (RFRA) and bridge this gap by proposing an RFRA-based eavesdropping system, RF-Parrot<sup>2</sup>, capable of wirelessly capturing audio signals transmitted through earphone wires. 
+          </p>
+          <p>  
+            Our system entails embedding a tiny field-effect transistor within the wire to establish a battery-free retroreflector, whose reflective efficiency is correlated with the amplitude of the audio signal. 
+            To preserve the complete details of analog audio signals, we designed a unique retroreflector using a depletion-mode MOSFET (D-MOSFET). This MOSFET can be triggered by any voltage level present in the audio signals, thus guaranteeing no loss of information during activation. However, the D-MOSFET introduces a nonlinear convolution operation on the original audio, resulting in a distorted audio eavesdropping. Thus, we devised an engineering solution which utilized a novel convolutional neural network in conjunction with an efficient Parallel WaveGAN vocoder to reconstruct the original audio. Our comprehensive experiments demonstrate a strong similarity between the reconstructed audio and the original, achieving an impressive 95% accuracy in speech command recognition.
           </p>
 
-          
+<!--           
           <p>Our system entails embedding a tiny field-effect transistor within the wire to establish a battery-free retroreflector, whose reflective efficiency is correlated with the amplitude of the audio signal. 
             To preserve the complete details of analog audio signals, we devised a unique retroreflector employing a depletion-mode MOSFET (D-MOSFET). This MOSFET can be triggered by any voltage level present in the audio signals, thus guaranteeing no loss of information during activation. 
           </p>
@@ -259,7 +261,7 @@
             
             Furthermore, we developed a theoretical model to demystify the nonlinear transmission of the retroreflector, identifying it as a convolution operation on the audio spectrum. Subsequently, we devised an engineering solution employing a novel convolutional neural network in conjunction with an efficient Parallel WaveGAN vocoder to reconstruct the original audio. Our comprehensive experiments demonstrate a strong similarity between the reconstructed audio and the original, achieving an impressive 95\% accuracy in speech command recognition.
           </p>
-          <p>
+          <p> -->
 <!--             We show that <span class="dnerf">Nerfies</span>  -->
           </p>
         </div>
@@ -274,12 +276,12 @@
     <div class="hero-body">
       <div style="text-align: center">
       <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
-        <img src="./static/figs/image copy.png" width="600">
+        <img src="./static/figs/image copy.png" width="700">
       <!-- </video> -->
       </div>
       <h2 class="subtitle has-text-centered">
         The waveform and spectrogram of the original, eavesdropped and reconstructed LJ001-0134.wav 
-          from the LJSpeech dataset, resampled at 8~KHz.
+          from the LJ Speech dataset, resampled at 8~KHz.
       </h2>
     </div>
   </div>
